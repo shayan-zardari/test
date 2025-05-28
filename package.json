@@ -1,0 +1,21 @@
+{
+  "name": "api_express",
+  "version": "1.0.0",
+  "description": "first api build in express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "author": "Shayan Zardari",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongodb": "6.16",
+    "mongoose": "^8.15.0",
+    "mongosh": "^2.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

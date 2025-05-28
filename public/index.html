@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello there</title> 
+    </head>
+    <body>  
+        <div>
+            <h1>
+                Hello there!
+            </h1>
+            <form>
+                <input type="text" name=""
+            </form>
+        </div>
+        <div id="response"></div>
+        <script>
+            const resDiv = document.getElementById("response");
+
+            let response = fetch("/test").then((res) => {
+                console.log(res);
+                return res.text();
+            }).then((res)=> {
+                console.log(res);
+                resDiv.innerText = JSON.parse(res).message;
+            });
+
+            // resDiv.innerText = response;
+        </script>
+    </body>
+</html>
